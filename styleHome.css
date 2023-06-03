@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&family=Roboto:ital,wght@1,100;1,300&display=swap');
+
+/* font-family: 'Nova Round', cursive;
+font-family: 'Roboto', sans-serif; */
+
+body {
+    background: linear-gradient(to bottom, transparent, black), url("/img/screen1.jpg");
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0px;
+    margin-top: 200px;
+}
+
+nav{
+  background: linear-gradient(to bottom, #46e981, #30a35a);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 90px;
+  z-index: 9;
+}
+
+h1{
+  font-family: 'Nova Round', cursive;
+  color: white;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+footer{
+  margin-bottom: 0;
+}
+
+#a-museicon{
+  position: absolute;
+  margin: 10px 10px;
+  display: inline;
+}
+
+#a-muselogo{
+  position: absolute;
+  margin: 15px 10px;
+  display: inline;
+  margin-left: 110px;
+}
+
+#icons{
+  text-align: center;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+#icon {
+background: transparent;
+color: white;
+border-color: transparent;
+height: 75px;
+width: 75px;
+  margin: 0 25px;
+}
+
+#home {
+  text-align: center;
+}
+
+#title{
+    font-size: 50px;
+}
+
+#subtitle{
+    font-size: 20px;
+}
+
+#logo {
+    size-adjust: 20px;
+    text-align: justify;
+}
+
+#buttons {
+    display: inline-block;
+    text-align: center;
+    padding: 7.5%;
+    margin: 5% 5%;
+}
+
+#pages {
+	background: transparent;
+	color: white;
+	border-style: solid;
+	border-color: white;
+	height: 250px;
+	width: 250px;
+	font-family: 'Nova Round', cursive;
+    font-size: 15px;
+    margin: 0 25px;
+}
+
+/* FOOTER */
+
+.footer {
+  width: 100%;
+  position: sticky;
+  margin-top: 25%;
+  height: auto;
+  background-color: black;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nova Round', cursive;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: #999999;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  padding: 10px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.footer .col ul li a:hover {
+  text-decoration: none;
+  color: #46e981;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+.contain {
+  width: 100%;
+  margin: 0 auto;
+}
+.footer img{
+  padding: 50px;
+  text-align: center;
+  margin: 0 auto;
+}
+#rodape{
+  color: #999999;
+  font-size: 15px;
+  text-align: center;
+  margin: 2% 5%;
+}
+#spotifylogo{
+  margin: 10px 10px;
+  margin-left: 200px;
+}
+
+/* FOOTER */
