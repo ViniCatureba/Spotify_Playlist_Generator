@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | A-Muse</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styleHome.css') }}">
+
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                
+                <img src="{{url_for('static', filename='img/A-MuseIcon.png')}}" id="a-museicon" onclick="goToHome()">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="/createPlaylist">Crie sua Playlist</a>
+                    </li>
+                    <li>
+                        <a href="/aboutus">Sobre Nós</a>
+                    </li>
+                    <li>
+                        <a href="/faq">FAQ</a>
+                    </li>
+                </ul>
+                <div class="login-signup">
+                    <span><form action="/callback" method="GET">
+                        <input  type="submit" value="Login" onclick="logado()">
+                    </form>
+                    <form action="/logoff" method="POST">
+                        <input type="submit" value="Logoff" onclick="logoff()">
+                    </form></span>
+                    
+                </div>
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="login-signup">
+                <form action="/callback" method="GET">
+                    <input  type="submit" value="Login" >
+                </form>
+                <form action="/logoff" method="POST">
+                    <input type="submit" value="Logoff" onclick="logoff()">
+                </form>
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <h1>Introduzindo o</h1>
+            <img src="{{url_for('static', filename='img/A-MuseLogo.png')}}">
+            <p>O A-Muse é um site que te auxilia a encontrar inspiração para fazer o que quiser,
+                lhe fornecendo a playlist perfeita baseada no seu desejo!</p>
+                <br>
+        </div>
+        <br>
+        <div class="main">
+            <h1>Como funciona?</h1>
+            <p>Através do Login em sua conta do Spotify, o A-Muse irá criar a playlist baseada em seu texto. <br> Tem uma ideia legal?
+                Basta clicar em "Criar Playlist" para começar, sua playlist favorita está te esperando!</p>
+            <div class="containerbuttons">
+                <a href="/createPlaylist">Criar Playlist</a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="contain">
+            <div class="col">
+                <h1>Páginas</h1>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/createPlaylist">Crie Sua Playlist</a></li>
+                    <li><a href="/aboutus">Sobre Nós</a></li>
+                </ul>
+                <h1>Suporte</h1>
+                <ul>
+                    <li><a href="/faq">FAQ</a></li>
+                    <li><a href="mailto:faq.amuse@gmail.com?subject=Sugestão">Fale Conosco</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <img src="{{url_for('static', filename='img/A-MuseIcon.png')}}" id="a-musefooter">
+                <img src="{{url_for('static', filename='img/spotifyLogo.png')}}" id="spotifylogo">
+            </div>
+            <div class="clearfix"></div>
+            <p id="rodape">© Copyright 2023 | A-Muse Development Team</p>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='js/scriptHome.js') }}"></script>
+
+
+
+
+
+</body>
+</html>
